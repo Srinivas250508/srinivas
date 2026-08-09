@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+    * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f2fe, #f5f3ff, #fce7f3);
+    color: #222;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #2563eb, #7c3aed, #db2777);
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fde68a;
+}
+
+/* Home */
+header {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0 0 15px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    color: #5b21b6;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Projects */
+.project-card {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 750px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    color: #7c3aed;
+    font-size: 23px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact */
+#contact {
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+#contact p {
+    font-size: 17px;
+    margin: 12px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+}
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <header id="home"></header>
+    <h1>Srinivas.M</h1>
+    <p>B.Tech Computer Science Engineering Student</p>
+    <p>Welcome to my personal portfolio</p>
+</header>
+
+    <section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Srinivas.M, a B.Tech Computer Science
+        Engineering student. I am interested in Python,
+        web development, and learning new technologies.
+    </p>
+</section>
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+        </div>
+    </section>
+
+    <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+            A personal portfolio website created using HTML and CSS
+            to showcase my skills, projects, and contact information.
+        </p>
+        <p><strong>Technologies:</strong> HTML, CSS</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Python Projects</h3>
+        <p>Python projects will be added as I continue learning Python.</p>
+    </div>
+</section>
+
+    <section id="contact">
+
+    <p>📧 Email: srinivasmurugaraj@gmail.com</p>
+    <p>📱 Phone: +91 9345523327</p>
+    <p>📍 Location: Tamil Nadu, India</p>
+
+    <p>
+    🔗 LinkedIn:
+    <a class="social-link" href="https://www.linkedin.com/in/srinivas-murugaraj-8b1b80380" target="_blank">
+        My LinkedIn Profile
+    </a>
+</p>
+
+<p>
+    💻 GitHub:
+    <a class="social-link" href="https://github.com/Srinivas250508" target="_blank">
+        My GitHub Profile
+    </a>
+</p>
+
+<p>
+    🌐 Portfolio:
+    <a class="social-link" href="https://srinivas250508.github.io/portfolio/" target="_blank">
+        My Portfolio
+    </a>
+</p>
+</section>
+
+
+</body>
+</html>
